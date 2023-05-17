@@ -1,0 +1,61 @@
+@font-face {
+    font-family: fredoka;
+    src: url(/assets/fonts/Fredoka-Bold.ttf);
+}
+.heading1{
+    font-family: fredoka;
+    position: absolute;
+    left: 40%;
+}
+.background{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    padding-left: 30px;
+    top: 15%;
+}
+.insuranceName{
+width: 300px;
+position: absolute;
+top: 25%;
+font-family: fredoka;
+}
+.insuranceid{
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    top:10%;
+    font-family: fredoka;
+}
+.insuranceDescription{
+    width: 350px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-family: fredoka;
+}
+.InsuranceType{
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    top: 40%;
+    font-family: fredoka;
+}
+.premium{
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    top: 55%;
+    font-family: fredoka;
+}
+.submit{
+    width: 80%;
+    height: 40px;
+    position:absolute;
+    top: 80%;
+    color: white;
+    background: #000;
+    left: 12%;
+    font-family: fredoka;
+}

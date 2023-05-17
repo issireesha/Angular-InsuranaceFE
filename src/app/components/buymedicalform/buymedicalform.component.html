@@ -1,0 +1,88 @@
+<div class="body" [ngClass]="getBodyClass()">
+    <div class="background">
+        <h1 class="heading1">BUY INSURANCE</h1>
+  
+        <div class="headings-1">
+            <h2 class="heading2">INSURANCE DETAILS</h2>
+            <h3 class="heading3">The below fields contains details of the insurance</h3>
+            <h3 class="insurancedetails">Insurance ID : {{ insurance_details.insuranceId }}</h3>
+            <h3 class="insurancedetails">Insurance Type :{{ insurance_details.insuranceType  }}</h3>
+        </div>
+  
+        <h3 class="relationheadins">Subscriber Details</h3>
+  
+        <form  class="form" (ngSubmit)="buynewmedicalplan()">
+          <h3 class="input-heading">Subscriber Email*</h3>
+          <mat-form-field class="firstname" appearance="outline">
+              <input [(ngModel)]="primary_subscriber.email" minlength="11" maxlength="30" matInput autocomplete="off" required name="email" type="email">
+            </mat-form-field>
+
+            <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+
+            <h3 class="input-heading">Subscriber Firstname*</h3>
+            <mat-form-field class="firstname" appearance="outline" >
+              <input [(ngModel)]="primary_subscriber.primarySubscriberFirstname"  maxlength="20" matInput autocomplete="off" type="text" required  name="primarySubscriberFirstname">
+            </mat-form-field>
+
+            <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+            <h3 class="input-heading">Subscriber Middlename*</h3>
+            <mat-form-field class="firstname" appearance="outline" >
+              <input [(ngModel)]="primary_subscriber.primarySubscriberMiddlename" maxlength="20" matInput autocomplete="off" type="text" required  name="primarySubscriberMiddlename">
+              
+            </mat-form-field>
+
+            <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+            <h3 class="input-heading">Subscriber Last Name*</h3>
+            <mat-form-field class="firstname" appearance="outline" >
+              <input [(ngModel)]="primary_subscriber.primarySubscriberLastname" maxlength="20"  autocomplete="off" matInput type="text" required  name="primarySubscriberLastname">
+              
+            </mat-form-field>
+
+            <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;margin-bottom:20px;background-color: #c9c9c7;">
+            <h3 class="input-heading">Subscriber Age*</h3>
+            <mat-form-field class="firstname" appearance="outline" >
+              <input [(ngModel)]="primary_subscriber.primarySubscriberAge" maxlength="2" autocomplete="off" matInput type="number" required  name="primarySubscriberAge">
+              
+            </mat-form-field>
+
+            <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+            <h3 class="input-heading">Subscriber Address*</h3>
+            <mat-form-field class="firstname" appearance="outline" >
+              <input [(ngModel)]="primary_subscriber.primarySubscriberAddress" maxlength="50" autocomplete="off" matInput type="text" required  name="primarySubscriberAddress">
+              
+            </mat-form-field>
+            
+            <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+            <h3 class="input-heading">Subscriber Aadhar*</h3>
+            <mat-form-field class="firstname" appearance="outline" >
+              <input [(ngModel)]="primary_subscriber.primarySubscriberAadharNo" minlength="12" maxlength="12" autocomplete="off" matInput type="number" required  name="primarySubscriberAadharNo">
+              
+            </mat-form-field>
+            <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+            <h3 class="input-heading">Subscriber Pan Number*</h3>
+            <mat-form-field class="firstname" appearance="outline" >
+              <input [(ngModel)]="primary_subscriber.primarySubscriberPanNo" minlength="10" maxlength="10" autocomplete="off" matInput type="text" required  name="primarySubscriberPanNo">
+            </mat-form-field>
+            <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+            <h3 class="input-heading">Subscriber Phone*</h3>
+          <mat-form-field class="firstname" appearance="outline">
+              <input [(ngModel)]="primary_subscriber.primarySubscriberPhone" minlength="10" maxlength="10" matInput autocomplete="off" required name="primarySubscriberPhone" type="number">
+            </mat-form-field>
+
+            <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+            <h3 class="input-heading">Subscriber Gender*</h3>
+          <mat-form-field class="firstname" appearance="outline">
+            <mat-label>Gender</mat-label>
+            <mat-select [(ngModel)]="primary_subscriber.primarySubscriberGender" required name="primarySubscriberGender">
+              <mat-option value="Male">Male</mat-option>
+              <mat-option value="Female">Female</mat-option>
+              <mat-option value="Transgender">Transgender</mat-option>
+            </mat-select>  
+            </mat-form-field>
+            <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+
+            <button class="submit" type="submit" mat-raised-button>Buy Insurance</button>
+      </form>
+    </div>
+  </div>
+  

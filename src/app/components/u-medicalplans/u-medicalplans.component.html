@@ -1,0 +1,13 @@
+<div class="body" [ngClass]="getBodyClass()">
+    <h1 class="heading1">Medical Insurance Plans</h1>
+
+    <div class="card" *ngFor="let data of medicalplans">
+        <div class="card-head">
+            Insurance Id : {{ data.insuranceId}} | &nbsp; Insurance Name : {{ data.insuranceName }} | 
+            &nbsp;Premium: starting 542/- montly &nbsp; | Insurance Covered: {{ data.coverage }}
+        </div>
+        <div class="card-body">
+                {{ data.insuranceDescription }}
+        </div>
+    </div>
+</div>

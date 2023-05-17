@@ -1,0 +1,25 @@
+<div class="background">
+    <form  class="form" (ngSubmit)="givefeedback()">
+      <h3 class="heading1">ADMIN FEEDBACK</h3>
+        <mat-form-field class="insuranceid" >
+            <input [(ngModel)]="pendingInsurance_data.insuranceNumber" name="insuranceNumber" disabled matInput autocomplete="off" required placeholder="Insurance Number"  type="text">
+          </mat-form-field>
+        
+          <mat-form-field class="insuranceName">
+            <input [(ngModel)]="pendingInsurance_data.insuranceId" name="insuranceId" disabled matInput type="text" autocomplete="off" required placeholder="Insurance ID" >
+          </mat-form-field>
+
+          <mat-form-field class="insuranceDescription">
+            <mat-label>Give Feedback</mat-label>
+            <textarea [(ngModel)]="pendingInsurance_data.feedback"  matInput name="feedback" id="" autocomplete="off" cols="30" rows="10" required></textarea>
+          </mat-form-field>
+        
+
+        <mat-form-field class="premium">
+            <input [(ngModel)]="pendingInsurance_data.email" disabled name="email" matInput type="email" autocomplete="off" required placeholder="email" >
+        </mat-form-field>
+         
+
+        <button class="submit" type="submit" mat-raised-button>SEND FEEDBACK</button>
+    </form>
+</div>

@@ -1,0 +1,169 @@
+@font-face {
+    font-family:biryani;
+    src: url(/assets/fonts/Biryani-ExtraBold.ttf) format('truetype');
+}
+.biryani{
+    font-family: biryani;
+}
+@font-face {
+    font-family:candal;
+    src: url(/assets/fonts/Candal-Regular.ttf) format('truetype');
+}
+.chango{
+    font-family: candal;
+}
+@font-face {
+    font-family: baloo;
+    src: url(/assets/fonts/Baloo2-SemiBold.ttf) format('truetype');
+}
+.baloo{
+    font-family: baloo;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    background-color: #fe725d;
+}
+.login-screen{
+    height:650px;
+    width:1250px;
+    position: absolute;
+    left: 145px;
+    top: 45px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: #ffb1a5;
+    float: left;
+    border-radius: 15px 0px 0px 15px;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    float: right;
+    border-radius: 0px 15px 15px 0px;
+}
+.login-icon{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 50px;
+    top: 70px;
+}
+.logo{
+    width: 110px;
+    height: 100px;
+    position: absolute;
+    top: -15px;
+    left: -20px;
+}
+.company{
+    font-family: baloo;
+    color: white;
+    font-size: 30px;
+    position:absolute;
+    left: 70px;
+    top: 26px;
+    font-weight: bold;
+}
+.quote{
+    position: absolute;
+    font-family: biryani;
+    color: white;
+    font-size: 30px;
+    top: 560px;
+    left: 130px;
+}
+.heading1{
+    font-family: candal;
+    font-size: 25px;
+    color:black;
+    position: absolute;
+    text-align: center;
+    left: 55%;
+    top: 20%;
+    float: right;
+}
+.username{
+    display: inline-block;
+    width: 30%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 30%;
+    left: 53%;
+    font-family: biryani;
+}
+.password{
+    display: inline-block;
+    width: 30%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top:40%;
+    left: 53%;
+    font-family: biryani;
+}
+
+.color-pink{
+    color: black;
+    position: relative;
+    top: 3px;
+}
+
+::ng-deep .mat-form-field-placeholder{
+
+    color:black !important;
+  }
+
+  ::ng-deep .mat-focused .mat-form-field-placeholder{
+
+    color:black !important;
+  }
+  ::ng-deep .mat-form-field-outline .mat-form-field-ripple{
+
+    background-color:#fe725d !important;
+  }
+  
+  ::ng-deep .mat-form-field-outline .mat-form-field-appearance-outline{
+  
+    background-color:#fe725d !important;
+  }
+
+  ::ng-deep .mat-input-element::placeholder{
+    color: black;
+    position: relative;
+    left: 15px;
+    font-family: biryani;
+}
+.submit{
+    position: absolute;
+    width: 26%;
+    top:60%;
+    left: 55%;
+    background-color: #fe725d;
+    font-family: candal;
+
+}
+.link{
+    position: absolute;
+    font-family: biryani;
+    color: #fe725d;
+    top:55%;
+    left: 55%;
+}
+a{
+    color: #fe725d;
+}
+.fg{
+    position: absolute;
+    width: 26%;
+    top:70%;
+    left: 55%;
+    background-color: #fe725d;
+    font-family: candal;
+}

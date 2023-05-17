@@ -1,0 +1,33 @@
+<div class="background">
+    <form  class="form" (ngSubmit)="addnewdentalplan()">
+      <h3 class="heading1">ADD NEW DENTAL INSURANCE PLAN</h3>
+        <mat-form-field class="insuranceid" >
+            <input [(ngModel)]="insurancedata.insuranceId" name="insuranceId" matInput autocomplete="off" required placeholder="Insurance Id"  type="text">
+          </mat-form-field>
+        
+          <mat-form-field class="insuranceName">
+            <input [(ngModel)]="insurancedata.insuranceName" name="insuranceName" matInput type="text" autocomplete="off" required placeholder="Dental Insurance Name" >
+          </mat-form-field>
+
+          <mat-form-field class="insuranceDescription">
+            <mat-label>Insurance Description</mat-label>
+            <textarea [(ngModel)]="insurancedata.insuranceDescription"  matInput name="insuranceDescription" id="" autocomplete="off" cols="30" rows="10" required></textarea>
+          </mat-form-field>
+
+          <mat-form-field class="InsuranceType" >
+            <mat-label>Insurance Type</mat-label>
+            <mat-select required [(ngModel)]="insurancedata.insuranceType" name="insuranceType">
+                <mat-option  value="Medical">Medical Insurance</mat-option>
+                <mat-option value="Dental">Dental Insurance</mat-option>
+            </mat-select>
+        </mat-form-field>
+        
+
+        <mat-form-field class="premium">
+            <input [(ngModel)]="insurancedata.coverage" name="coverage" matInput type="number" autocomplete="off" required placeholder="Coverage amount" >
+        </mat-form-field>
+         
+
+        <button class="submit" type="submit" mat-raised-button>ADD NEW INSURANCE</button>
+    </form>
+</div>

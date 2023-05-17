@@ -1,0 +1,53 @@
+<div class="body" [ngClass]="getBodyClass()">
+    <h1 class="heading1">Dashboard</h1>
+    <h1 class="heading2">Health and Dental Insurance</h1>
+
+    <div class="Insurance-plans">
+        
+        <div class="plan1" routerLink="/usermedicalplans">
+            <i id="div-icons" class="fa-solid fa-bed-pulse"></i>
+            <h3 class="inner-heading">Medical Insurance  <br>  starting at</h3>
+            <h3 class="rs">₹ 542</h3>
+        </div>
+        <div class="plan2" routerLink="/userdentalplans">
+            <i  id="div-icons" class="fa-solid fa-tooth"></i>
+            <h3 class="inner-heading">Dental Insurance<br> starting at</h3>
+            <h3 class="rs">₹ 1083</h3>
+        </div>
+        <div class="plan3" routerLink="/renewinsurance">
+            <i id="div-icons" class="fa-solid fa-window-restore"></i>
+            <h3 class="inner-heading-r">Renew <br> Your Insurances</h3>
+        </div>
+    </div>
+    <h1 class="heading3">Your Active Plans</h1>
+    <div class="your-plans">
+
+        <div class="your-f" routerLink="yourplans">
+            <i id="div-icons" class="fa-solid fa-bed-pulse"></i>
+            <h3 class="inner-heading">Active <br>Medical Insurance</h3>
+            <h3 class="count">{{ medicalcount }}</h3>
+        </div>
+        <div class="your-m" routerLink="yourplans">
+            <i  id="div-icons" class="fa-solid fa-tooth"></i>
+            <h3 class="inner-heading">Active <br>Dental Insurance</h3>
+            <h3 class="count">{{ dentalcount }}</h3>
+        </div>
+
+        <div class="your-d" routerLink="/userpendinginsurance">
+            <i id="div-icons" class="fa-solid fa-table-list"></i>
+            <h3 class="inner-heading">Un-accepted <br> Insurances</h3>
+            <h3 class="count">{{ count }}</h3>
+        </div>
+
+        <div class="your-fp" routerLink="/forgotpassword">
+            <i id="div-icons" class="fa-solid fa-lock"></i>
+            <h3 class="inner-heading-r">Change Password <br> Change your account password</h3>
+        </div>
+
+        <div class="your-p" routerLink="/userdashboard/userlogout">
+            <i id="div-icons" class="fa-solid fa-right-from-bracket"></i>
+            <h3 class="inner-heading-r">Logout <br> from the application</h3>
+        </div>
+        
+    </div>
+</div>

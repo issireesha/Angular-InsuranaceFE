@@ -1,0 +1,36 @@
+<div class="background">
+    <div class="login-screen">
+        <div class="left">
+            <img class="logo" src="/assets/Img/logo1.png" alt="">
+            <h4 class="company">IMPETUS INSURANCE</h4>
+            <img class="login-icon" src="/assets/Img/loginIcon.png" alt="">
+
+            <h1 class="quote">Buy  a  Insurance  and  get <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attractive  offers</h1>
+        </div>
+        <div class="right">
+            <h1 class="heading1">Let's Get Started.</h1>
+
+            <form (ngSubmit)="LoginFormSubmit()" class="form">
+                <!--Email-->
+                <mat-form-field class="username" appearance="outline">
+                    <input [(ngModel)]="user.email" matInput  autocomplete="off" required placeholder="Enter your email" minlength="11" maxlength="25" name="email" type="email">
+                    <mat-icon class="color-pink" matPrefix>email</mat-icon>
+                  </mat-form-field>
+                <!--Password-->
+                  <mat-form-field class="password" appearance="outline" >
+                    <input [(ngModel)]="user.password" matInput type="password" minlength="7" required placeholder="Enter password" maxlength="10" name="password">
+                    <mat-icon class="color-pink" matPrefix >lock</mat-icon>
+                    
+                  </mat-form-field>
+
+                  <button class="submit" type="submit" mat-raised-button>Log In</button>
+            </form>
+            <p class="link">Not an user yet? 
+                <a routerLink="/signup">&nbsp;&nbsp;Sign up.</a>
+            </p>
+            <button class="fg" mat-raised-button routerLink="/forgotpassword">Forgot Password?</button>
+
+            
+        </div>
+    </div>
+</div>

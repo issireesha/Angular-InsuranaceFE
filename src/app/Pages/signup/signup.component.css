@@ -1,0 +1,141 @@
+@font-face {
+    font-family:biryani;
+    src: url(/assets/fonts/Biryani-ExtraBold.ttf) format('truetype');
+}
+.biryani{
+    font-family: biryani;
+}
+@font-face {
+    font-family:candal;
+    src: url(/assets/fonts/Candal-Regular.ttf) format('truetype');
+}
+.chango{
+    font-family: candal;
+}
+@font-face {
+    font-family: baloo;
+    src: url(/assets/fonts/Baloo2-SemiBold.ttf) format('truetype');
+}
+.baloo{
+    font-family: baloo;
+}
+.background{
+    height: 100%;
+    width: 100%;
+    background-color: #eef5ff;
+    background-image: url(/assets/Img/signup_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.signup-screen{
+    height:650px;
+    width:1250px;
+    position: absolute;
+    left: 145px;
+    top: 45px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    background: rgb(2,179,249);
+    background: linear-gradient(136deg, rgba(2,179,249,1) 0%, rgba(0,127,240,1) 100%);
+    float: right;
+}
+.fg-icon{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 50px;
+    top: 70px;
+}
+.logo{
+    width: 110px;
+    height: 100px;
+    position: absolute;
+    top: -15px;
+    left: -20px;
+}
+.company{
+    font-family: baloo;
+    color: #00a9fe;
+    font-size: 30px;
+    position:absolute;
+    left: 70px;
+    top: 26px;
+    font-weight: bold;
+}
+.heading1{
+    font-family: biryani;
+    font-size: 60px;
+    position:absolute;
+    top: 100px;
+    margin-left: 60px;
+    color: #ffffff;
+}
+.username{
+    display: inline-block;
+    width: 30%;
+    padding: 12px 20px;
+    position: absolute;
+    top: 32%;
+    left: 53%;
+    font-family: biryani;
+}
+.password{
+    display: inline-block;
+    width: 30%;
+    padding: 12px 20px;
+    position: absolute;
+    top:42%;
+    left: 53%;
+    font-family: biryani;
+}
+.password2{
+    display: inline-block;
+    width: 30%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top:52%;
+    left: 53%;
+    font-family: biryani;
+}
+.color-pink{
+    color: black;
+    position: relative;
+    top: 3px;
+}
+
+::ng-deep .mat-form-field-placeholder{
+
+    color:black !important;
+    text-align: center;
+  }
+
+  ::ng-deep .mat-focused .mat-form-field-placeholder{
+
+    color:black !important;
+  }
+  
+  ::ng-deep .mat-form-field-outline {
+  
+    background-color:#ffffff !important;
+  }
+  .submit{
+    position: absolute;
+    width: 29%;
+    height: 50px;
+    top:60%;
+    left: 55%;
+    color: #00a9fe;
+    background-color:#ffffff;
+    font-family: candal;
+
+}

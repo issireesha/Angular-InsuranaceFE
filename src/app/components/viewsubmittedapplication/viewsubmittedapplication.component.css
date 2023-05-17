@@ -1,0 +1,121 @@
+@font-face {
+    font-family:fredoka;
+    src: url(/assets/fonts/Fredoka-Medium.ttf) format('truetype');
+}
+.baloo{
+    font-family: fredoka;
+}
+.body{
+    width: calc(100% -5rem);
+    height: 210vh;
+    margin-left:4rem;
+    z-index: 0;
+    position: relative;
+    top: 0;
+    transition: all .5s ease;
+    background: #f4f7fa;
+    padding: 3rem; 
+}
+.body-trimmed{
+width: calc(100%-16.5625rem);
+margin-left: 16.5625rem;
+
+}
+.body-md-screen{
+    width: calc(100%-5rem);
+    margin-left: 5rem;
+    
+}
+.heading1{
+    font-size: 30px;
+    font-weight: 1000;
+}
+.heading2{
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    top: 30px;
+}
+.heading3{
+    color: #6a6c6e;
+    font-size: 13px;
+    font-family: cursive;
+    position: relative;
+    top: 10px;
+}
+.headings-1{
+    border-bottom: 2px solid #c9c9c7;
+    margin-bottom: 50px;
+}
+.input-heading{
+    font-size: 15px;
+    color: #262625;
+    font-family: fredoka;
+}
+.firstname{
+    position: relative;
+    border: none;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    background-color:#f4f7fa ;
+    top: -45px;
+    text-align: center;
+    left: 200px;
+    font-family: fredoka;
+    font-size: 15px;
+    color: #262625;
+}
+.firstname:focus{
+    outline:none;
+    border: 2px solid #6a6c6e;
+}
+.submit{
+    margin-top: 20px;
+    width: 200px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    font-family: fredoka;
+    position: absolute;
+    cursor: pointer;
+    float: inline-end;
+}
+.back{
+    margin-top: 20px;
+    width: 200px;
+    height: 37px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    font-family: fredoka;
+    position: absolute;
+    cursor: pointer;
+    left: 20%;
+    float: inline-end;
+}
+
+::ng-deep .mat-form-field-outline-start {
+    border-radius: 10px 0 0 10px !important;
+    min-width: 28px !important;
+  }
+  
+::ng-deep .mat-form-field-outline-end {
+    border-radius: 0 10px 10px 0 !important;
+}
+
+::ng-deep .mat-form-field-infix  {
+        border: 0px !important;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-select-arrow-wrapper{
+    transform: none !important;
+}
+
+
+::ng-deep .mat-form-field-outline {
+    color: #6a6c6e;
+}
+
+::ng-deep .mat-form-field-outline:focus {
+    color: #6a6c6e;
+}

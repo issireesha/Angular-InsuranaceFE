@@ -1,0 +1,80 @@
+@font-face {
+    font-family: fredoka;
+    src: url(/assets/fonts/Fredoka-Bold.ttf);
+}
+.background{
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  position: absolute;
+  top: 15%;
+}
+.heading1{
+  font-family: fredoka;
+  font-size: 20px;
+  position: absolute;
+  left: 40%;
+  top: 3%;
+}
+.username{
+  display: block;
+  position: absolute;
+  width: 60%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  top:30%;
+  left: 22%;
+  font-family: fredoka;
+}
+.password{
+    display: inline-block;
+    width: 60%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    font-family: fredoka;
+    top: 50%;
+    left: 22%;
+}
+
+.color-pink{
+    color: black;
+    position: relative;
+    top: 3px;
+}
+
+::ng-deep .mat-form-field-placeholder{
+
+    color:black !important;
+  }
+
+  ::ng-deep .mat-focused .mat-form-field-placeholder{
+
+    color:black !important;
+  }
+  ::ng-deep .mat-form-field-outline .mat-form-field-ripple{
+
+    background-color:#fe725d !important;
+  }
+  
+  ::ng-deep .mat-form-field-outline .mat-form-field-appearance-outline{
+  
+    background-color:#fe725d !important;
+  }
+
+  ::ng-deep .mat-input-element::placeholder{
+    color: black;
+    position: relative;
+    left: 15px;
+    font-family: fredoka;
+}
+.submit{
+    position: absolute;
+    width: 60%;
+    top: 85%;
+    left: 22%;
+    background-color: black;
+    color: white;
+    font-family: fredoka;
+
+}

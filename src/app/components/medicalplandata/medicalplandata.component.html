@@ -1,0 +1,16 @@
+<div class="body" [ngClass]="getBodyClass()">
+    <h1 class="heading1">Medical Insurance Plans</h1>
+    <button class="add" (click)="addnewplan()">Add new plan</button>
+    <div class="card" *ngFor="let pl of medicalplan">
+        <div class="card-head">
+            Insurance Id : {{ pl.insuranceId}} | &nbsp; Insurance Name : {{ pl.insuranceName }} | 
+            &nbsp;Premium: starting 542/- montly &nbsp; | Insurance Covered: {{ pl.coverage }}
+            <i id="edit" class="fa-solid fa-pen-to-square"(click)="updatemedicalplan(pl.insuranceId)" title="Edit"></i>
+            <i id="delete" class="fa-solid fa-trash-can"(click)="deletemedicalplan(pl.insuranceId)" title="delete"></i>
+        </div>
+        <div class="card-body">
+               {{ pl.insuranceDescription }}
+        </div>
+    </div>
+    <button class="back" routerLink="/admindashboard">Back</button>
+</div>

@@ -1,0 +1,17 @@
+<div class="background">
+    <form class="form" (ngSubmit)="addnewadmin()">
+        <!--Email-->
+        <h1 class="heading1">ADD NEW ADMIN</h1>
+        <mat-form-field class="username" appearance="outline">
+            <input [(ngModel)]="admindata.email" matInput autocomplete="off" required placeholder="Enter your email" name="email" type="email">
+            <mat-icon class="color-pink" matPrefix>email</mat-icon>
+          </mat-form-field>
+        <!--Password-->
+          <mat-form-field class="password" appearance="outline" >
+            <input [(ngModel)]="admindata.password"   matInput type="password" required placeholder="Enter password" name="password">
+            <mat-icon class="color-pink" matPrefix >lock</mat-icon>
+          </mat-form-field>
+
+          <button class="submit" type="submit" mat-raised-button>ADD NEW ADMIN</button>
+    </form>
+</div>

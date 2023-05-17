@@ -1,0 +1,59 @@
+<div class="body" [ngClass]="getBodyClass()">
+    <h1 class="heading1">Settings</h1>
+    <div class="headings-1">
+        <h2 class="heading2">Profile</h2>
+        <h3 class="heading3">Update your personal details here</h3>
+    </div>
+    <form (ngSubmit)="putuserdetails()" class="form">
+        <h3 class="input-heading">Firstname</h3>
+        <mat-form-field class="firstname" appearance="outline">
+            <input [(ngModel)]="userDetails.firstname" maxlength="15" matInput autocomplete="off" required name="firstname" type="text">
+          </mat-form-field>
+
+          <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+
+          <h3 class="input-heading">Middlename</h3>
+          <mat-form-field class="firstname" appearance="outline" >
+            <input [(ngModel)]="userDetails.middlename" maxlength="15" matInput autocomplete="off" type="text" required  name="middlename">
+          </mat-form-field>
+
+          <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+          <h3 class="input-heading">Lastname</h3>
+          <mat-form-field class="firstname" appearance="outline" >
+            <input [(ngModel)]="userDetails.lastname" maxlength="15" matInput autocomplete="off" type="text" required  name="lastname">
+            
+          </mat-form-field>
+
+          <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+          <h3 class="input-heading">email</h3>
+          <mat-form-field class="firstname" appearance="outline" >
+            <input [(ngModel)]="userDetails.email" maxlength="30" value="{{ email }}" autocomplete="off" matInput type="email" required  name="password">
+            
+          </mat-form-field>
+
+          <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;margin-bottom:20px;background-color: #c9c9c7;">
+          <h3 class="input-heading">Phone Number</h3>
+          <mat-form-field class="firstname" appearance="outline" >
+            <input [(ngModel)]="userDetails.phone" maxlength="10" autocomplete="off" matInput type="number" required  name="phone">
+            
+          </mat-form-field>
+
+          <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+          <h3 class="input-heading">Pan Number</h3>
+          <mat-form-field class="firstname" appearance="outline" >
+            <input [(ngModel)]="userDetails.pan" minlength="10" maxlength="10" autocomplete="off" matInput type="text" required  name="pan">
+            
+          </mat-form-field>
+          
+          <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+          <h3 class="input-heading">Aadhar</h3>
+          <mat-form-field class="firstname" appearance="outline" >
+            <input [(ngModel)]="userDetails.aadhar" minlength="12" maxlength="12" autocomplete="off" matInput type="number" required  name="aadhar">
+            
+          </mat-form-field>
+          <hr style="height:2px;width:100%;text-align:left;border-width:0;margin-bottom:20px;background-color: #c9c9c7;">
+          <button class="submit" type="submit" mat-raised-button>Update</button>
+    </form>
+    <button class="back"(click)="back()">Back</button>
+    
+</div>

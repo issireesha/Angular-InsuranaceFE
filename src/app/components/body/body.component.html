@@ -1,0 +1,43 @@
+<div class="body" [ngClass]="getBodyClass()">
+    <h1 class="heading1">ADMIN DASHBOARD</h1>
+    <h1 class="heading2">Health and Dental Insurance</h1>
+
+    <div class="Insurance-plans">
+        <div class="plan1" routerLink="/medicalplans">
+            <i id="div-icons" class="fa-solid fa-bed-pulse"></i>
+            <h3 class="inner-heading-r">Add Medical <br>Insurance</h3>
+        </div>
+        <div class="plan2" routerLink="/dentalplans">
+            <i  id="div-icons" class="fa-solid fa-tooth"></i>
+            <h3 class="inner-heading-r">Add Dental <br>Insurance</h3>
+        </div>
+    </div>
+    <h1 class="heading3">Admin Tools</h1>
+    <div class="your-plans" routerLink="/addadmin">
+        <div class="your-f">
+            <i id="div-icons" class="fa-solid fa-people-group"></i>
+            <h3 class="inner-heading-r">Add <br>a new Admin</h3>
+        </div>
+        <div class="your-m" routerLink="/pendinginsurances">
+            <i id="div-icons" class="fa-solid fa-table-list"></i>
+            <h3 class="inner-heading">Un-accepted <br> Insurances</h3>
+            <h3 class="count">{{ count }}</h3>
+        </div>
+        <div class="your-d" routerLink="/settings">
+            <i id="div-icons" class="fa-solid fa-gears"></i>
+            <h3 class="inner-heading-r">Access <br>Admin Settings</h3>
+        </div>
+
+        <div class="your-fp" routerLink="/forgotpassword">
+            <i id="div-icons" class="fa-solid fa-lock"></i>
+            <h3 class="inner-heading-r">Change Password <br> Change your account password</h3>
+        </div>
+
+        <div class="your-p" routerLink="/logout">
+            <i id="div-icons" class="fa-solid fa-right-from-bracket"></i>
+            <h3 class="inner-heading-r">Logout <br> from the application</h3>
+        </div>
+
+        
+</div>
+

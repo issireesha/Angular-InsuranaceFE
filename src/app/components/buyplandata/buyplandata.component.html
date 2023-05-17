@@ -1,0 +1,26 @@
+<div class="body" [ngClass]="getBodyClass()">
+    <h1 class="heading1">Buy Insurance</h1>
+
+    <h2 class="heading2">Dental Insurance Plans</h2>
+    <div class="card" *ngFor="let data of dentalplans">
+        <div class="card-head">
+            Insurance Id : {{ data.insuranceId}} | &nbsp; Insurance Name : {{ data.insuranceName }} | 
+            &nbsp;Premium: starting 1083/- montly &nbsp; | Insurance Covered: {{ data.coverage }}
+            <button class="buydental" (click)="buydentalplan(data.insuranceId)">Buy Dental Insurance</button>
+        </div>
+        <div class="card-body">
+                {{ data.insuranceDescription }}
+        </div>
+    </div>
+    <h2 class="heading3">Medical Insurance Plans</h2>
+    <div class="card" *ngFor="let data of medicalplans">
+        <div class="card-head">
+            Insurance Id : {{ data.insuranceId}} | &nbsp; Insurance Name : {{ data.insuranceName }} | 
+            &nbsp;Premium: starting 542/- montly &nbsp; | Insurance Covered: {{ data.coverage }}
+            <button class="buymedical" (click)="buymedicalplan(data.insuranceId)">Buy Medical Insurance</button>
+        </div>
+        <div class="card-body">
+                {{ data.insuranceDescription }}
+        </div>
+    </div>
+</div>

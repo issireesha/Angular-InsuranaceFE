@@ -1,0 +1,28 @@
+<div class="background">
+    <div class="signup-screen">
+        <div class="left">
+            <img class="logo" src="/assets/Img/logo1.png" alt="">
+            <h4 class="company">IMPETUS INSURANCE</h4>
+            <img class="fg-icon" src="/assets/Img/signuplogo.jpg" alt="">
+        </div>
+
+        <div class="right">
+            <h1 class="heading1">HELLO THERE, <br> <br> WELCOME.</h1>  
+            
+            <form (ngSubmit)="adduser()" class="form">
+                <mat-form-field class="username" appearance="outline">
+                    <input [(ngModel)]="user_data.email" type="email" maxlength="30" matInput autocomplete="off" required placeholder="Enter your Email" name="email">
+                    <mat-icon class="color-black" matPrefix>email</mat-icon>
+                  </mat-form-field>
+
+                  <mat-form-field class="password" appearance="outline" >
+                    <input [(ngModel)]="user_data.password" maxlength="10" matInput type="password" required placeholder="Enter password" name="password">
+                    <mat-icon class="color-black" matPrefix >lock</mat-icon>
+                    
+                  </mat-form-field>
+
+                  <button class="submit" type="submit" mat-raised-button>Register.</button>
+            </form>
+        </div>
+    </div>
+</div>

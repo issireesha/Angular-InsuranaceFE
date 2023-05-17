@@ -1,0 +1,81 @@
+@font-face {
+    font-family:biryani;
+    src: url(/assets/fonts/Biryani-ExtraBold.ttf) format('truetype');
+}
+.biryani{
+    font-family: biryani;
+}
+@font-face {
+    font-family: baloo;
+    src: url(/assets/fonts/Baloo2-SemiBold.ttf) format('truetype');
+}
+.baloo{
+    font-family: baloo;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background: rgb(194,232,251);
+    background: linear-gradient(136deg, rgba(194,232,251,1) 0%, rgba(169,206,251,1) 100%);
+    
+}
+.home{
+    width:1400px;
+    height: 650px;
+    background-color: #f9f9f9;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.image{
+    position:absolute;
+    margin-left: 350px;
+    margin-top: 0px;
+    top: 10px;
+}
+.heading1{
+    font-family: biryani;
+    font-size: 40px;
+    position:absolute;
+    top: 200px;
+    margin-left: 60px;
+}
+.heading2{
+    font-family: biryani;
+    font-size: 80px;
+    position: absolute;
+    top: 290px;
+    margin-left: 60px;
+}
+.quote{
+    font-family: biryani;
+    font-size: 15px;
+    position: absolute;
+    top: 390px;
+    margin-left: 70px;
+}
+.getstarted{
+    font-family:biryani;
+    color: white;
+    background-color: #fe3227;
+    height: 40px;
+    width:150px;
+    position: absolute;
+    top: 500px;
+    margin-left: -70px;
+}
+.logo{
+    width: 140px;
+    height: 140px;
+}
+.company{
+    font-family: baloo;
+    font-size: 30px;
+    font-weight:bold;
+    position: absolute;
+    top: 60px;
+    left: 10%;
+   text-align: center;
+   justify-content: center;
+}
